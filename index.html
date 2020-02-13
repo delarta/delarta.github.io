@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+    <title>Delarta's Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="cont-main">
+      <nav>
+        <button id="menu-button">☰</button>
+      </nav>
+      <aside id="sidebar">
+        <a href="javascript:void(0)" id="close-button">×</a>
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#works">My Work</a>
+        <a href="#contact">Contact</a>
+      </aside>
+      <main id="main">
+        <section id="hero">
+          <div class="border"></div>
+          <div>
+            <div class="img-container prlx" data-rate="0.7">
+              <img src="./assets/img/profile.png" alt="hero" class="hero-img" />
+            </div>
+            <div class="hero-text">
+              <h1>
+                <ul class="prlx" data-rate="0.2">
+                  <li>DELARTA</li>
+                  <li>TOK ADIN</li>
+                </ul>
+              </h1>
+              <p class="prlx" data-rate="0.5">
+                Frontend Developer | UI Designer
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="container">
+            <div class="about-text">
+              <h1>ABOUT ME</h1>
+              <p>
+                In September 1996, a versatile hobbyist who like to dream was
+                born. In the spare time I like to draw and that hobby brought me
+                to love design. Designing is fun, but coding and make my own
+                design comes alive is more fun!. Just graduated from University
+                of Brawijaya in the Faculty of Computer Science make me want to
+                try things I never try before.
+              </p>
+            </div>
+          </div>
+          <div class="title-abs">
+            ABOUT ME
+          </div>
+        </section>
+        <section id="works">
+          <div class="container">
+            <div class="works-content">
+              <h1>MY WORKS</h1>
+              <div class="works-box">
+                <div class="box-item" onclick="openWork('frontend')">
+                  <picture>
+                    <img src="./assets/img/frontend.png" alt="frontend" />
+                  </picture>
+                  <div class="item-text">Frontend</div>
+                </div>
+                <div class="box-item" onclick="openWork('design')">
+                  <picture>
+                    <img src="./assets/img/design.png" alt="design" />
+                  </picture>
+                  <div class="item-text">UI Design</div>
+                </div>
+                <div class="box-item" onclick="openWork('illustration')">
+                  <picture>
+                    <img
+                      src="./assets/img/illustrator.png"
+                      alt="illustration"
+                    />
+                  </picture>
+                  <div class="item-text">Illustration</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-abs">
+            MY WORKS
+          </div>
+          <div class="work" id="frontend-work">
+            <div class="back-btn" onclick="closeWork('frontend')">
+              <div class="arrow">&#8250;</div>
+            </div>
+            <div class="container">
+              <h1>FRONTEND</h1>
+              <div class="works-box">
+                <div class="box-item">
+                  <picture>
+                    <img src="./assets/img/cariilmu_logo.png" alt="frontend" />
+                  </picture>
+                  <div class="desc">
+                    <h2>CARIILMU</h2>
+                    CariIlmu is an online learning community with thousands of
+                    classes in design, business, tech, and more.
+                  </div>
+                  <div class="box-text">
+                    <div target="_blank" href="https://cariilmu.netlify.com/">
+                      Website
+                    </div>
+                    <div
+                      target="_blank"
+                      href="https://github.com/delarta/cariilmu-frontend"
+                    >
+                      Github
+                    </div>
+                  </div>
+                </div>
+                <div class="box-item">
+                  <picture>
+                    <img src="./assets/img/github-512.png" alt="design" />
+                  </picture>
+                  <div class="desc">
+                    <h2>REDDID</h2>
+                    Reddid is simple reddit clone built with react js.
+                  </div>
+                  <div class="box-text">
+                    <div
+                      target="_blank"
+                      href="https://github.com/delarta/reddid"
+                    >
+                      Github
+                    </div>
+                  </div>
+                </div>
+                <div class="box-item">
+                  <picture>
+                    <img src="./assets/img/github-512.png" alt="illustration" />
+                  </picture>
+                  <div class="desc">
+                    <h2>TIC TAC TOE</h2>
+                    This simple tic tac toe game built using vanilla html, css,
+                    and javascript
+                  </div>
+                  <div class="box-text">
+                    <div
+                      target="_blank"
+                      href="https://github.com/delarta/simple-tictactoe"
+                    >
+                      Github
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work" id="illustration-work">
+            <div class="back-btn" onclick="closeWork('illustration')">
+              <div class="arrow">&#8250;</div>
+            </div>
+            <div class="container">
+              <h1>ILLUSTRATION</h1>
+              <div class="works-box">
+                <div class="box-item" onclick="openModal('illustration1-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568597273/Portfolio/Dea_eddjgn.png"
+                    alt="illustration1"
+                    id="illustration1-img"
+                  />
+                </div>
+                <div class="box-item" onclick="openModal('illustration2-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568597278/Portfolio/bujangganong_l6ztnq.png"
+                    alt="illustration2"
+                    id="illustration2-img"
+                  />
+                </div>
+                <div class="box-item" onclick="openModal('illustration3-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568597347/Portfolio/alien_colored_shqoun.png"
+                    alt="illustration3"
+                    id="illustration3-img"
+                  />
+                </div>
+                <div class="box-item" onclick="openModal('illustration4-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568598875/Portfolio/linka_eobrwm.png"
+                    alt="illustration4"
+                    id="illustration4-img"
+                  />
+                </div>
+                <div class="box-item" onclick="openModal('illustration5-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568598876/Portfolio/procrastinator_nwgg7a.png"
+                    alt="illustration5"
+                    id="illustration5-img"
+                  />
+                </div>
+                <div class="box-item" onclick="openModal('illustration6-img')">
+                  <img
+                    src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568598877/Portfolio/jathil2_yl6uby.png"
+                    alt="illustration6"
+                    id="illustration6-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work" id="design-work">
+            <div class="back-btn" onclick="closeWork('design')">
+              <div class="arrow">&#8250;</div>
+            </div>
+            <div class="container">
+              <h1>ILLUSTRATION</h1>
+              <div class="works-box">
+                <div class="box-item" onclick="openModal('cariilmu-img')">
+                  <picture>
+                    <img
+                      src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568343428/Portfolio/Cariilmu_Dark_eezguk.png"
+                      alt="cariilmu"
+                      id="cariilmu-img"
+                    />
+                  </picture>
+                  <div class="desc">
+                    <h2>CARIILMU</h2>
+                    CariIlmu is an online learning community with thousands of
+                    classes in design, business, tech, and more.
+                  </div>
+                </div>
+                <div class="box-item" onclick="openModal('lyricapp-img')">
+                  <picture>
+                    <img
+                      src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568343427/Portfolio/Lyric_App_e2jths.jpg"
+                      alt="lyricapp"
+                      id="lyricapp-img"
+                    />
+                  </picture>
+                  <div class="desc">
+                    <h2>LYRIC APP</h2>
+                    Simple UI for lyric app
+                  </div>
+                </div>
+                <div class="box-item" onclick="openModal('pertaminaku-img')">
+                  <picture>
+                    <img
+                      src="https://res.cloudinary.com/dtpnqygai/image/upload/v1568343425/Portfolio/PERTAMINAKU_nnfzb8.png"
+                      alt="pertaminaku"
+                      id="pertaminaku-img"
+                    />
+                  </picture>
+                  <div class="desc">
+                    <h2>PERTAMINAKU</h2>
+                    Improvement UI from MyPertamina app from PT Pertamina
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="modal" onclick="closeModal()">
+            <div class="container">
+              <img id="modal-content" />
+              <div class="caption"></div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <div class="contact-text">
+              <h1>FIND ME</h1>
+              <div id="social-media">
+                <a target="_blank" href="https://github.com/delarta">
+                  <img src="./assets/img/github-logo.svg" alt="github" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/delarta_ta/">
+                  <img src="./assets/img/instagram.svg" alt="instagram" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/delarta-tok-adin-59559816a/"
+                >
+                  <img src="./assets/img/linkedin.svg" alt="linkedin" />
+                </a>
+                <a target="_blank" href="mailto:delarta.tok@gmail.com">
+                  <img src="./assets/img/gmail.svg" alt="gmail" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="title-abs">
+            FIND ME
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div>
+          Copyright 2019 &copy; Delarta Tok Adin
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
